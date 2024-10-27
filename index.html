@@ -11,15 +11,19 @@
 <body>
 
     <div class="container">
+        <!--Tytuł strony-->
         <div class="title">
             <h2>Już dziś dowiedz się, co czeka Cię w przyszłości!</h2>
         </div>
     </div>
 
+    <!--Lewa strona-->
     <div class="left">
+        <!--Kula-->
         <div class="kula">
             <div class="tekst_przy_najechaniu">Kliknij mnie</div>
         </div>
+        <!--Formularz 1 przy nacisnięciu na kulę-->
         <form id="form_1">
             <label><b>Znak Zodiaki: </b></label>
             <select name="znak_zodiaki" id="znak_zodiaki">
@@ -38,10 +42,12 @@
         </form>
     </div>
 
+    <!--Prawa strona-->
     <div class="right">
-        <p>Nie znasz swojego znaku zodiaku?</p>
+        <div class="tekst_2">Nie znasz swojego znaku zodiaku?</div>
         <br>
         <button class="przycisk_form_2">Sprawdź!</button>
+        <!--Formularz 2 przy naciśnięciu przycisk "Sprawdź"-->
         <form id="form_2">
             <label>Podaj dzień urodzenia</label><br>
             <input type="number" name="dzien" id="dzien" min="1" max="31"><br>
@@ -50,6 +56,11 @@
                 <option value="styczen">Styczeń</option>
             </select>
         </form>
+        <!--Wynik zodiaku-->
+        <div id="wynikZodiaku" style="display: none; margin-top: 20px;">
+            <img id="obraz_zodiaku" src="" alt="znak zodiaku" style="max-width: 200px; display: none;">
+            <p id="opis_zodiaku" style="display: none;"></p>
+        </div>
     </div>
     
 </body>
