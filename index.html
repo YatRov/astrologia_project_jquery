@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrologia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h2>Już dziś dowiedz się, co czeka Cię w przyszłości!</h2>
+        </div>
+    </div>
+
+    <div class="left">
+        <div class="kula">
+            <div class="tekst_przy_najechaniu">Kliknij mnie</div>
+        </div>
+        <form id="form_1">
+            <label><b>Znak Zodiaki: </b></label>
+            <select name="znak_zodiaki" id="znak_zodiaki">
+                <option value="">Panna</option>//...
+            </select>
+            <br>
+            <label><b>Wiek: </b></label>
+            <input type="number" name="wiek" id="wiek" min="1" max="100">
+            <br>
+            <label><b>Płeć: </b></label><br>
+            <input type="radio" name="plec" id="plec" value="mężczyzna">Mężczyzna
+            <input type="radio" name="plec" id="plec" value="kobieta">Kobieta
+            <br>
+            <br>
+            <button class="przycisk_form_1">Wyślij</button>
+        </form>
+    </div>
+
+    <div class="right">
+        <p>Nie znasz swojego znaku zodiaku?</p>
+        <br>
+        <button class="przycisk_form_2">Sprawdź!</button>
+        <form id="form_2">
+            <label>Podaj dzień urodzenia</label><br>
+            <input type="number" name="dzien" id="dzien" min="1" max="31"><br>
+            <label>Jaki miesiąć?</label><br>
+            <select name="miesiac" id="miesiac">
+                <option value="styczen">Styczeń</option>
+            </select>
+        </form>
+    </div>
+    
+</body>
+</html>
