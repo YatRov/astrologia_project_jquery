@@ -1,8 +1,7 @@
 body {
     background-image: url('stars.jpg');
-    background-size: cover;
+    background-size: cover;/*Obraz tla rozciąga się na cała powierzchnię strony*/
     background-position: center; 
-    background-repeat: no-repeat; 
     margin:0;
     padding:0;
 }
@@ -10,8 +9,8 @@ body {
 .container {
     min-height: 100vh; 
     width: 100%;
-    flex-direction: column; 
-    align-items: center;
+    flex-direction: column; /*Elementy wewnątrz kontenera będą układane w kolumnie*/
+    align-items: center; /*Wyrównanie elementów wewnątrz kontenera do środka*/
 }
 
 .title{
@@ -38,13 +37,13 @@ body {
 .kula{
     width: 150px;
     height: 150px;
-    background: radial-gradient(circle at 30% 30%, rgba(106, 56, 106, 0.8), rgba(50, 0, 50, 0.9));
-    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(106, 56, 106, 0.8), rgba(50, 0, 50, 0.9));/*Gradient promieniowy na tle*/
+    border-radius: 50%; /*Koło*/
     left: 20%;
     top: 23%;
-    position: absolute;
-    box-shadow: 0 0 30px 15px rgba(172, 59, 152, 0.5), inset 0 0 10px 5px rgba(255, 255, 255, 0.3);
-    animation: AnimacjaKula 2s ease-in-out infinite;
+    position: absolute;/*Ustawienie pozycji absolutnej względem nadrzędnego elementu*/
+    box-shadow: 0 0 30px 15px rgba(172, 59, 152, 0.5), inset 0 0 10px 5px rgba(255, 255, 255, 0.3);/*Dodanie efekt cienia zewnętrznego i wewnętrznego*/
+    animation: AnimacjaKula 2s ease-in-out infinite;/*Dodaje animację, która powtarza się w nieskończoność*/
 }
 
 .tekst_przy_najechaniu{
@@ -60,13 +59,13 @@ body {
 
 @keyframes AnimacjaKula{
     0% {
-        box-shadow: 0 0 30px 15px rgba(172, 59, 152, 0.5), inset 0 0 10px 5px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 30px 15px rgba(172, 59, 152, 0.5), inset 0 0 10px 5px rgba(255, 255, 255, 0.3);/*Początkowy cień*/
     }
     50% {
-        box-shadow: 0 0 40px 20px rgba(178, 156, 178, 0.7), inset 0 0 15px 7px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 40px 20px rgba(178, 156, 178, 0.7), inset 0 0 15px 7px rgba(255, 255, 255, 0.5);/*Zmiana cienia w polowie animacji*/
     }
     100% {
-        box-shadow: 0 0 30px 15px rgba(172, 59, 152, 0.5), inset 0 0 10px 5px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 30px 15px rgba(172, 59, 152, 0.5), inset 0 0 10px 5px rgba(255, 255, 255, 0.3);/*Powrót do początkowego cienia*/
     }
 }
 
@@ -85,7 +84,7 @@ body {
     height: 120px;
     color:#405379;
     font-size: 16px;
-    box-shadow:10px 7px 5px #8d2d94;
+    box-shadow:10px 7px 5px #8d2d94;/*Dodanie cienia*/
 }   
 
 .przycisk_form_1{
@@ -100,7 +99,7 @@ body {
 
 .podswietlenie_form {
     box-shadow: 0 0 30px 10px rgba(123, 39, 114, 0.8);
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;/*Płynne przejście przy zmianie cienia, trwające 0,5 sekundy*/
 }
 
 .right {  
@@ -136,7 +135,7 @@ body {
 
 .podswietlenie_form_2 {
     box-shadow: 0 0 30px 10px rgba(123, 39, 114, 0.8);
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;/*Płynne przejście przy zmianie cienia, trwające 0,5 sekundy*/
 }
 
 .przycisk_form_2 {
