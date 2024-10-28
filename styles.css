@@ -144,7 +144,6 @@ body {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    border: none;
     border-radius: 1000px;
     padding: 5px 10px;
     box-shadow: 0 0 15px rgba(141, 45, 148, 0.5);
@@ -160,6 +159,30 @@ body {
     }
 }
 
-.linia{
-    border: 2px solid ;
+.przycisk_form_3 {
+    background-color: #8d2d94;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 15px; 
+    border-radius: 1000px;
+    padding: 5px 10px; 
+    margin: 2px;
 }
+
+#wynikZodiaku {
+    position: absolute;
+    top: 50%;/* Wyśrodkowanie w pionie*/
+    left: 10%;/* Wyśrodkowanie w poziomie*/
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%; /*Maksymalna szerokość wyniku*/
+    width: 80%;/*Szerokość na 80% ekranu*/
+    text-align: center;
+    color: #405379;
+    font-size: 16px;
+    display: flex; 
+    align-items: center;    
+}
+
+
