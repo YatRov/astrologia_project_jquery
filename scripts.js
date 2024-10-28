@@ -24,23 +24,80 @@ $(function() {
 });
 
 //Funkcja do formularz 2
-/*
+
 $(function(){
-    $('').on('click', function(){
+    $('.przycisk_form_3').on('click', function(){
         let dzien = parseInt($('#dzien').val());
         let miesiac = $('#miesiac').val();
         let znak = '';
         let img = '';
         let opis = '';
 
-        if ((dzien >= 20 && miesiac === 'styczen') || (dzien <= 18 && miesiac === 'marzec')){
+        if ((dzien >= 20 && miesiac === 'styczen') || (dzien <= 18 && miesiac === 'luty')){
             znak = 'Wodnik';
             obraz = '';
             opis = '';
-
-        }else if (){
-
         }
+
+        else if ((dzien >= 19 && miesiac === 'luty') || (dzien <= 20 && miesiac === 'marzec')){
+            znak = 'Ryby';
+            obraz = '';
+            opis = '';
+        }
+
+        else if ((dzien >= 21 && miesiac === 'marzec') || (dzien <= 19 && miesiac === 'kwiecien')){
+            znak = 'Baran';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 20 && miesiac === 'kwiecien') || (dzien <= 20 && miesiac === 'maj')){
+            znak = 'Byk';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 21 && miesiac === 'maj') || (dzien <= 20 && miesiac === 'czerwiec')){
+            znak = 'Bliźnięta';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 21 && miesiac === 'czerwiec') || (dzien <= 22 && miesiac === 'lipiec')){
+            znak = 'Rak';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 23 && miesiac === 'lipiec') || (dzien <= 22 && miesiac === 'sierpien')){
+            znak = 'Lew';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 23 && miesiac === 'sieprien') || (dzien <= 22 && miesiac === 'wrzesien')){
+            znak = 'Panna';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 23 && miesiac === 'wrzesien') || (dzien <= 22 && miesiac === 'pazdziernik')){
+            znak = 'Waga';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 23 && miesiac === 'pazdziernik') || (dzien <= 21 && miesiac === 'listopad')){
+            znak = 'Skorpion';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 22 && miesiac === 'listopad') || (dzien <= 21 && miesiac === 'grudzien')){
+            znak = 'Strzelec';
+            obraz = '';
+            opis = '';
+        }
+        else if ((dzien >= 22 && miesiac === 'grudzien') || (dzien <= 19 && miesiac === 'styczen')){
+            znak = 'Koziorożec';
+            obraz = '';
+            opis = '';
+        }
+        else{
+            
+        }
+        
     });
 });
-*/
