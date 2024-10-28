@@ -26,7 +26,8 @@ $(function() {
 //Funkcja do formularz 2
 
 $(function(){
-    $('.przycisk_form_3').on('click', function(){
+    $('.przycisk_form_3').on('click', function(event){
+        event.preventDefault();
         let dzien = parseInt($('#dzien').val());
         let miesiac = $('#miesiac').val();
         let znak = '';
@@ -99,5 +100,11 @@ $(function(){
             
         }
         
+        // Ustaw obraz i opis
+        $('#obraz_zodiaku').attr('src', obraz).show();
+        $('#opis_zodiaku').text(opis).show();
+
+        // Wyświetl sekcję wyniku
+        $('#wynikZodiaku').fadeIn();
     });
 });
