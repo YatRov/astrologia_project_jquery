@@ -24,7 +24,7 @@
             <div class="tekst_przy_najechaniu">Kliknij mnie</div>
         </div>
         <!--Formularz 1 przy nacisnięciu na kulę-->
-        <form id="form_1">
+        <form id="form_1" action="druga_strona.html">
             <label><b>Znak zodiaku: </b></label>
             <select name="znak_zodiaki" id="znak_zodiaki">
                 <option>Panna</option>
@@ -52,7 +52,6 @@
             <button class="przycisk_form_1">Wyślij</button>
         </form>
     </div>
-    <div class="linia"></div>
     <!--Prawa strona-->
     <div class="right">
         <div class="tekst_2">Nie znasz swojego znaku zodiaku?</div>
@@ -79,13 +78,12 @@
             </select>
             <br>
             <button class="przycisk_form_3">Wyślij</button>
-        </form>
-        <!--Wynik zodiaku-->
+        </form>        
+    </div>
+    <!--Wynik zodiaku-->
         <div id="wynikZodiaku" style="display: none; margin-top: 20px;">
             <img id="obraz_zodiaku" src="" alt="znak zodiaku" style="max-width: 200px; display: none;">
             <p id="opis_zodiaku" style="display: none;"></p>
         </div>
-    </div>
-    
 </body>
 </html>
