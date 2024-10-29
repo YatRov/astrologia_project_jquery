@@ -35,8 +35,8 @@ body {
 }
 
 .kula{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background: radial-gradient(circle at 30% 30%, rgba(106, 56, 106, 0.8), rgba(50, 0, 50, 0.9));/*Gradient promieniowy na tle*/
     border-radius: 50%; /*Koło*/
     left: 20%;
@@ -76,7 +76,7 @@ body {
     border-radius: 10px;
     margin-top: 30px;
     position: absolute;
-    left: 16%; 
+    left: 19%; 
     top: 58%;
     display: none; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -172,17 +172,19 @@ body {
 #wynikZodiaku {
     position: absolute;
     top: 50%;/* Wyśrodkowanie w pionie*/
-    left: 10%;/* Wyśrodkowanie w poziomie*/
+    right: 280px;/* Wyśrodkowanie w poziomie*/
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     max-width: 90%; /*Maksymalna szerokość wyniku*/
-    width: 80%;/*Szerokość na 80% ekranu*/
+    width: 250px;/*Szerokość ekranu*/
     text-align: center;
     color: #405379;
     font-size: 16px;
     display: flex; 
     align-items: center;    
 }
-
-
+/*
+#obraz_zodiaku img{
+    border-radius: 50px;
+}*/
