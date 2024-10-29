@@ -36,7 +36,7 @@ $(function(){
 
         if ((dzien >= 20 && miesiac === 'styczen') || (dzien <= 18 && miesiac === 'luty')){
             znak = 'Wodnik';
-            obraz = 'wodnik.png';
+            obraz = 'img/wodnik.png';
             opis = 'Wodniki to osoby, które często bujają w obłokach, mając głowy pełne marzeń i rewolucyjnych pomysłów.';
         }
 
